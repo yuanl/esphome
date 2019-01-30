@@ -1,0 +1,26 @@
+esphomeyaml:
+  name: lab
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: ''
+  password: ''
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ''
+
+ota:
+
+
+light:
+  - platform: fastled_clockless
+    chipset: WS2811
+    pin: D1
+    num_leds: 300
+    rgb_order: RBG
+    name: "windowled"
